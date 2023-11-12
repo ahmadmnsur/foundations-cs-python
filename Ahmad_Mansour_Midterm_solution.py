@@ -64,5 +64,12 @@ def open_nested_tab(title_nested,url_nested):
     except ValueError:   
         print("index should be only integer number")          
 def clear_all_tabs(_lst_tabs):
-    _lst_tabs.clear()            
+    _lst_tabs.clear()
+def save_tabs(_lst_tabs):
+    file_path=input("Enter the file path to save the tabs: ").strip()
+    if not file_path.endswith(".json"):
+        print("please enter a json file format ")
+    elif len(file_path[:-5])>0:
+        with open(file_path,"a") as  convert_format:
+            convert_format.write(json.dumps(_lst_tabs,indent=2))                
         
