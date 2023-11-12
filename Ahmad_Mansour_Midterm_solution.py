@@ -5,8 +5,8 @@ lst_tabs=[]
 def validate_url(add_or_open):
     try:
         title=input("enter title ").strip()
-        url=input("enter url ").strip()
-        requests.head(url,timeout=15)
+        url=input("enter url ")
+        requests.head(url,timeout=215)
     except requests.exceptions.RequestException:
         return print("url invalide")
     if add_or_open=="add_tab":
@@ -15,7 +15,8 @@ def validate_url(add_or_open):
         return open_nested_tab(title,url)
 def add_tab(title,url):
     new_tab={"title":title,"url":url,"nested":[]}
-    lst_tabs.append(new_tab)   
+    lst_tabs.append(new_tab) 
+    print("the tab is added")  
 def validate_index(tab,colse_or_switch):
     try:
         index=int(input("enter index "))
@@ -26,14 +27,15 @@ def validate_index(tab,colse_or_switch):
                 switch_tab(tab,len(tab)-1)
         else:
             if colse_or_switch=="close_tab":
-                close_tab(tab, index)
+                close_tab(tab, index,lst_tabs)
             elif colse_or_switch=="switch_tab" :
                 switch_tab(tab,index)
     except ValueError:
         print("please enter only integer number")
-def close_tab(tab,index):
+def close_tab(tab,index,tabs):
     if len(tab)>0:
         tab.pop(index)
+        print("the tab is closed")
     else:
         print("There is no tab to close it")         
 def switch_tab(tab,index):
@@ -59,6 +61,7 @@ def open_nested_tab(title_nested,url_nested):
         if  index_nested<len(lst_tabs) and index_nested>=0 :
             nested_tab={"title":title_nested,"url":url_nested}
             lst_tabs[index_nested]["nested"].append(nested_tab)
+            print("nested tab is added")
         else:
             print("number of index out of bound")
     except ValueError:   
@@ -73,6 +76,7 @@ def save_tabs(_lst_tabs):
     elif len(file_path[:-5])>0:
         with open(file_path,"a") as  convert_format:
             convert_format.write(json.dumps(_lst_tabs,indent=2))
+            print("tabs are saved")
 def import_tabs():
     try:
         file_path=input("Enter the file path to import the tabs: ").strip()
@@ -119,5 +123,8 @@ def main():
         except ValueError:
             print("print number")
 main()
-print("Good bye")                             
-            
+print("Good bye")  
+#resources: I learnt try except in my uni 
+#I learnt web scraping and files and json  in youtube: 1)https://youtube.com/playlist?list=PLDoPjvoNmBAyE_gei5d18qkfIe-Z8mocs&si=pwkJKsCPv24PTlZM                               
+#                                                      2)https://youtu.be/taL3r_JpwBg?si=SMelmLvfulA7nayZ    
+#                                                      3)https://youtu.be/jABj-SEhtBc?si=AWBie8fLrMHgh4Av
