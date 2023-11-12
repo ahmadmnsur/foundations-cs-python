@@ -8,8 +8,8 @@ def count(x,d):
      
      count(x,d+1)
    elif x<0:
-     x=int(input("enter only positive number"))
-     count(x,d)
+      x=int(input("enter only positive number"))
+      count(x , d)
     
    else:
       print(d)

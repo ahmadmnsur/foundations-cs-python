@@ -1,10 +1,8 @@
 ## Exercixe one
 def factorial ():
-    
-    while True:
-     
-      inp=input("enter a positive integer: ")
-      try:
+ while True: 
+  inp=input("enter a positive integer: ")
+  try:
        val=int(inp) 
        if val<0 :
         print("factorial doesnot exist for negative number")
@@ -16,9 +14,9 @@ def factorial ():
           for i in range (1,val+1):
             fact*=i
        break
-      except ValueError: 
+  except ValueError: 
        print("please don't enter a string or float number")       
-    print(fact)
+ print(fact)
     
   
  ##############################################  
@@ -71,7 +69,7 @@ def even():
 #############      Exercice 5      ##########################
 
 def password():
- a =input("type the password a ")
+ a =input("type the password  ")
  count_num=0
  count_special=0 
  count_upper=0
@@ -123,6 +121,8 @@ def ipv4():
     return True
    
 def main(): 
+    """this is the main
+    """
     print("__________Exercice 1_________\n")
     factorial()
     print("\n__________Exercice 2_________")

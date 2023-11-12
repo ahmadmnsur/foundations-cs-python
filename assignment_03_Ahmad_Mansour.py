@@ -112,7 +112,7 @@ def main():
             print("Student added:", new_student)
 
         elif choice == 5:
-            # You can create a second list of student data and pass both lists to the function
+            
             common_majors = find_common_majors(student_data, student_data)
             print("Common majors:", common_majors)
 
