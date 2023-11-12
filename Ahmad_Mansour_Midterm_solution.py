@@ -54,10 +54,13 @@ def display_all_tabs(tabs):
                     allnesteds+=tabs[parent]["nested"][nested]["title"]
                     print("  nested tab: " ,allnesteds )
 def open_nested_tab(title_nested,url_nested):
+    try:
         index_nested=int(input("enter the index of the parent tab to insert additional tab: "))
         if  index_nested<len(lst_tabs) and index_nested>=0 :
             nested_tab={"title":title_nested,"url":url_nested}
             lst_tabs[index_nested]["nested"].append(nested_tab)
         else:
-            print("number of index out of bound")                
+            print("number of index out of bound")
+    except ValueError:   
+        print("index should be only integer number")              
         
