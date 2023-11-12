@@ -62,5 +62,7 @@ def open_nested_tab(title_nested,url_nested):
         else:
             print("number of index out of bound")
     except ValueError:   
-        print("index should be only integer number")              
+        print("index should be only integer number")          
+def clear_all_tabs(_lst_tabs):
+    _lst_tabs.clear()            
         
