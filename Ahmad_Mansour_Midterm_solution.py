@@ -116,5 +116,7 @@ def main():
             elif choice==9:
                 break
         except ValueError:
-            print("print number")                 
+            print("print number")
+main()
+print("Good bye")                             
             
