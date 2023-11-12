@@ -6,7 +6,7 @@ def validate_url(add_or_open):
     try:
         title=input("enter title ").strip()
         url=input("enter url ")
-        requests.head(url,timeout=215)
+        requests.head(url,timeout=25)
     except requests.exceptions.RequestException:
         return print("url invalide")
     if add_or_open=="add_tab":
