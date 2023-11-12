@@ -120,9 +120,10 @@ def main():
                 import_tabs()
             elif choice==9:
                 break
+                print("Good bye")
         except ValueError:
             print("print number")
-            print("Good bye")  
+              
 main()
 
 #resources: I learnt try except in my uni 
