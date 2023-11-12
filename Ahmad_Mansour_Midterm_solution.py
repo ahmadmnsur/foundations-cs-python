@@ -36,3 +36,12 @@ def close_tab(tab,index):
         tab.pop(index)
     else:
         print("There is no tab to close it")         
+def switch_tab(tab,index):
+    if len(tab)>0:
+        page =requests.get(tab[index]["url"])
+        src=page.content               # byte code
+        soup=BeautifulSoup(src,"lxml")  # parsing
+        print(soup)
+    else:
+        print("There is no tab")        
+        
