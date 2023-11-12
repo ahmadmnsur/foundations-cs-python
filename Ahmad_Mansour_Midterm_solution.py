@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup # please install modules pip install
 lst_tabs=[]# this empty list for add all tabs parent and nested tabs 
 def validate_url(add_or_open):
     try:
-        title=input("enter title ").strip()#strip for emove spaces
+        title=input("enter title ")
         url=input("enter url ")
         requests.head(url,timeout=25)
     except requests.exceptions.RequestException:
