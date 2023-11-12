@@ -43,5 +43,15 @@ def switch_tab(tab,index):
         soup=BeautifulSoup(src,"lxml")  # parsing
         print(soup)
     else:
-        print("There is no tab")        
+        print("There is no tab")
+def display_all_tabs(tabs):
+    if len(tabs)>0:
+        for parent in range(len(tabs)):
+            print(tabs[parent]["title"])
+            if len(tabs[parent]["nested"])>0:
+                for nested in range(len(tabs[parent]["nested"])):
+                    allnesteds=""
+                    allnesteds+=tabs[parent]["nested"][nested]["title"]
+                    print("  nested tab: " ,allnesteds )
+                
         
