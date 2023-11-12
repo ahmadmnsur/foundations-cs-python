@@ -3,7 +3,7 @@ import requests
 from bs4 import BeautifulSoup # please install modules pip install 
 lst_tabs=[]# this empty list for add all tabs parent and nested tabs 
 def validate_url(add_or_open):
-    try:
+    try:#handling error
         title=input("enter title ")
         url=input("enter url ")
         requests.head(url,timeout=25)
