@@ -13,3 +13,6 @@ def validate_url(add_or_open):
         return add_tab(title,url)
     if add_or_open=="open_nested_tab": 
         return open_nested_tab(title,url)
+def add_tab(title,url):
+    new_tab={"title":title,"url":url,"nested":[]}
+    lst_tabs.append(new_tab)    
