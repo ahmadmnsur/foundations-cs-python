@@ -73,11 +73,14 @@ def save_tabs(_lst_tabs):
         with open(file_path,"a") as  convert_format:
             convert_format.write(json.dumps(_lst_tabs,indent=2))
 def import_tabs():
+    try:
         file_path=input("Enter the file path to import the tabs: ").strip()
         if not file_path.endswith(".json"):
             print("please enter a json file format ")
         elif len(file_path[:-5])>0:
             with open(file_path,"r",encoding="utf-8") as read_file:
                 read=json.load(read_file)
-                print(read)                            
-        
+                print(read)
+    except FileNotFoundError:
+        print("please enter the correct file name")            
+            
