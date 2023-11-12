@@ -1,7 +1,7 @@
 import json
 import requests
 from bs4 import BeautifulSoup # please install modules pip install 
-lst_tabs=[]
+lst_tabs=[]# this empty list for add all tabs parent and nested tabs 
 def validate_url(add_or_open):
     try:
         title=input("enter title ").strip()#strip for emove spaces
