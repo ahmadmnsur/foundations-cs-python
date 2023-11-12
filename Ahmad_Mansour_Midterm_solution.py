@@ -17,6 +17,7 @@ def add_tab(title,url):
     new_tab={"title":title,"url":url,"nested":[]}
     lst_tabs.append(new_tab)   
 def validate_index(tab,colse_or_switch):
+    try:
         index=int(input("enter index "))
         if (index<len(tab)-1 and index<0) or index>len(tab)-1:
             if colse_or_switch=="close_tab":
@@ -27,4 +28,7 @@ def validate_index(tab,colse_or_switch):
             if colse_or_switch=="close_tab":
                 close_tab(tab, index)
             elif colse_or_switch=="switch_tab" :
-                switch_tab(tab,index)     
+                switch_tab(tab,index)
+    except ValueError:
+        print("please enter only integer number")       
+    
