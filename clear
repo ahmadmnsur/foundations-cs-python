@@ -1,0 +1,95 @@
+[33mcommit 77b9f56dc5a44d74ecde88a816bdd5fb7fc780af[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: ahmad <madrid7.am79@gmail.com>
+Date:   Sun Nov 12 18:58:23 2023 +0200
+
+    add try except
+
+[33mcommit d96023b14876ab2395cd72378f998fe41de00185[m
+Author: ahmad <madrid7.am79@gmail.com>
+Date:   Sun Nov 12 18:57:27 2023 +0200
+
+    function import tabs
+
+[33mcommit b568e9ba1ebc79ef753d63e1589e73566e77b7f5[m
+Author: ahmad <madrid7.am79@gmail.com>
+Date:   Sun Nov 12 18:54:36 2023 +0200
+
+    function save tabs
+
+[33mcommit 1bbb395f12a30848ce709dfa6996cf58b359468e[m
+Author: ahmad <madrid7.am79@gmail.com>
+Date:   Sun Nov 12 18:51:22 2023 +0200
+
+    functiom clear all tabs
+
+[33mcommit 5bab40be93ba5f01056ac0be4b1bb7ef8a06addc[m
+Author: ahmad <madrid7.am79@gmail.com>
+Date:   Sun Nov 12 18:50:03 2023 +0200
+
+    add try except
+
+[33mcommit c56ad920c82aa684ecbdc5987802ce0c1dbc7dfa[m
+Author: ahmad <madrid7.am79@gmail.com>
+Date:   Sun Nov 12 18:49:04 2023 +0200
+
+    function open nested tab
+
+[33mcommit 7095df937fdbcec74caaabb509c514ef42e18fcf[m
+Author: ahmad <madrid7.am79@gmail.com>
+Date:   Sun Nov 12 18:46:40 2023 +0200
+
+    function display all tabs
+
+[33mcommit 0bab6d94d4c261f8648abb65550a04a46b1dfb92[m
+Author: ahmad <madrid7.am79@gmail.com>
+Date:   Sun Nov 12 18:44:38 2023 +0200
+
+    function switch tab
+
+[33mcommit cccd0df347cd34cb30f6ceae66e1308523b15120[m
+Author: ahmad <madrid7.am79@gmail.com>
+Date:   Sun Nov 12 18:42:22 2023 +0200
+
+    add else statment
+
+[33mcommit e3a7c6cc3b458c9589cc6a008b973a0cdfb13208[m
+Author: ahmad <madrid7.am79@gmail.com>
+Date:   Sun Nov 12 18:40:07 2023 +0200
+
+    function close tab
+
+[33mcommit 6f5e81fa6765bb7bc8e8470d382dac68e12c8dc8[m
+Author: ahmad <madrid7.am79@gmail.com>
+Date:   Sun Nov 12 18:37:08 2023 +0200
+
+    add try except
+
+[33mcommit c43de504c9aec191d20a57ee1234874b20fd8876[m
+Author: ahmad <madrid7.am79@gmail.com>
+Date:   Sun Nov 12 18:34:12 2023 +0200
+
+    function validate index
+
+[33mcommit af5847991d390c91e8dfbab65da8b05ad33e3e0f[m
+Author: ahmad <madrid7.am79@gmail.com>
+Date:   Sun Nov 12 18:31:45 2023 +0200
+
+    function add tab
+
+[33mcommit b5156c43824049d7f02e8e9fc9ccd667b4463b39[m
+Author: ahmad <madrid7.am79@gmail.com>
+Date:   Sun Nov 12 18:30:09 2023 +0200
+
+    add empty list
+
+[33mcommit 99336676cbd00998c86eb49d990f7a51a3c4a63a[m
+Author: ahmad <madrid7.am79@gmail.com>
+Date:   Sun Nov 12 18:28:37 2023 +0200
+
+    function validate url
+
+[33mcommit 2b993608b91bed53a58ec0cb6547907f45dcd5c0[m
+Author: ahmad <madrid7.am79@gmail.com>
+Date:   Sun Nov 12 18:23:29 2023 +0200
+
+    addings imports
