@@ -84,6 +84,7 @@ def import_tabs():
     except FileNotFoundError:
         print("please enter the correct file name")
  def main():
+     while True:
         print("Menu:")
         print("1. Open Tab")
         print("2. Close Tab")
@@ -110,5 +111,7 @@ def import_tabs():
         elif choice==7:
             save_tabs(lst_tabs)
         elif choice==8:
-            import_tabs()                    
+            import_tabs()   
+        elif choice==9:
+            break                     
             
