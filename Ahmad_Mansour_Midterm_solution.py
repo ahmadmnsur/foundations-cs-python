@@ -31,4 +31,7 @@ def validate_index(tab,colse_or_switch):
                 switch_tab(tab,index)
     except ValueError:
         print("please enter only integer number")       
-    
+
+def close_tab(tab,index):
+    if len(tab)>0:
+        tab.pop(index)    
