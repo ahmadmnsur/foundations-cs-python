@@ -122,8 +122,9 @@ def main():
                 break
         except ValueError:
             print("print number")
+            print("Good bye")  
 main()
-print("Good bye")  
+
 #resources: I learnt try except in my uni 
 #I learnt web scraping and files and json  in youtube: 1)https://youtube.com/playlist?list=PLDoPjvoNmBAyE_gei5d18qkfIe-Z8mocs&si=pwkJKsCPv24PTlZM                               
 #                                                      2)https://youtu.be/taL3r_JpwBg?si=SMelmLvfulA7nayZ    
