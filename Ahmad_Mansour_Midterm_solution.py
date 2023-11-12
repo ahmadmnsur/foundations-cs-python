@@ -119,8 +119,8 @@ def main():
             elif choice==8:
                 import_tabs()
             elif choice==9:
-                break
                 print("Good bye")
+                break
         except ValueError:
             print("print number")
               
