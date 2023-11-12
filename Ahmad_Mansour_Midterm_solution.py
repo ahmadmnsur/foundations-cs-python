@@ -1,6 +1,6 @@
 import json
 import requests
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup # please install modules pip install 
 lst_tabs=[]
 def validate_url(add_or_open):
     try:
