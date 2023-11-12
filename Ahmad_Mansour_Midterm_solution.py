@@ -1,6 +1,7 @@
 import json
 import requests
 from bs4 import BeautifulSoup
+lst_tabs=[]
 def validate_url(add_or_open):
     try:
         title=input("enter title ").strip()
