@@ -83,8 +83,8 @@ def import_tabs():
                 print(read)
     except FileNotFoundError:
         print("please enter the correct file name")
- def main():
-     while True:
+def main():
+    while True:
         print("Menu:")
         print("1. Open Tab")
         print("2. Close Tab")
@@ -95,23 +95,26 @@ def import_tabs():
         print("7. Save Tabs")
         print("8. Import Tabs")
         print("9. Exit")
-        choice = int(input("Enter your choice: "))
-        if (choice)==1:
-            validate_url("add_tab")
-        elif (choice)==2:
-            validate_index(lst_tabs,"close_tab")
-        elif (choice)==3:
-            validate_index(lst_tabs,"switch_tab")
-        elif choice==4:
-            display_all_tabs(lst_tabs)
-        elif choice==5:
-            validate_url("open_nested_tab")
-        elif choice==6:
-            clear_all_tabs(lst_tabs)
-        elif choice==7:
-            save_tabs(lst_tabs)
-        elif choice==8:
-            import_tabs()   
-        elif choice==9:
-            break                     
+        try:
+            choice = int(input("Enter your choice: "))
+            if (choice)==1:
+                validate_url("add_tab")
+            elif (choice)==2:
+                validate_index(lst_tabs,"close_tab")
+            elif (choice)==3:
+                validate_index(lst_tabs,"switch_tab")
+            elif choice==4:
+                display_all_tabs(lst_tabs)
+            elif choice==5:
+                validate_url("open_nested_tab")
+            elif choice==6:
+                clear_all_tabs(lst_tabs)
+            elif choice==7:
+                save_tabs(lst_tabs)
+            elif choice==8:
+                import_tabs()
+            elif choice==9:
+                break
+        except ValueError:
+            print("print number")                 
             
